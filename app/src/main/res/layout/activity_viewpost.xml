@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:background="@drawable/background">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="TITLE"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:background="@drawable/background"/>
+            <TextView
+                android:id="@+id/singlepost_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="this is title"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:background="@drawable/background">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="WRITER"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:background="@drawable/background"/>
+            <TextView
+                android:id="@+id/singlepost_writer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="username"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:background="@drawable/background">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="DATE"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:background="@drawable/background"/>
+            <TextView
+                android:id="@+id/singlepost_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="2020-07-06T14:22:41.719387"
+                android:background="@drawable/background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:weightSum="1"
+            android:background="@drawable/background">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02" />
+            <TextView
+                android:id="@+id/singlepost_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_weight="0.9" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/singlepost_comments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/singlepost_write_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"/>
+
+            <Button
+                android:id="@+id/singlepost_write_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
