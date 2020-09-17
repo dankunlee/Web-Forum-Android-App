@@ -1,4 +1,4 @@
-# Simple-Web-Forum-Android-App
+# Web-Forum-Android-App
 
 This is an android app I built for practice that calls REST APIs from local server to perform basic posting and commenting functionalities of a web forum.
 
